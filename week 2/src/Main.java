@@ -9,6 +9,7 @@ public class Main {
         Owner owner1 = new Owner(201, "Ainur", "+77001234567", 1);
         Veterinarian vet1 = new Veterinarian(301, "Dr. Dastan", "dog", 6);
         Veterinarian vet2 = new Veterinarian();
+        vet2.setName("Buddy");
 
         System.out.println("--- PETS ---");
         System.out.println(pet1);
@@ -22,6 +23,7 @@ public class Main {
 
         System.out.println("--- VETS ---");
         System.out.println(vet1);
+        System.out.println(vet2);
         System.out.println();
 
         System.out.println("--- TESTING GETTERS ---");
@@ -75,6 +77,7 @@ public class Main {
         System.out.println();
         System.out.println("Vets:");
         System.out.println(vet1);
+        System.out.println(vet2);
 
         System.out.println("\n=== Program Complete ===");
     }
