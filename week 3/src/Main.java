@@ -10,13 +10,15 @@ public class Main {
     public static void main(String[] args) {
         pets.add(new Pet(101, "Aktos", "dog", 3));
         pets.add(new Pet(102, "Aktaban", "dog", 2));
-        pets.add(new Pet(103, "Musya", "cat", 1));
+        pets.add(new Pet(103, "Musya", "cat", -2));
 
         owners.add(new Owner(201, "Arman", "+77011234567", 1));
         owners.add(new Owner(202, "Akbota", "+77012345678", 1));
 
         veterinarians.add(new Veterinarian(301, "Dr. Dastan", "dog", 5));
         veterinarians.add(new Veterinarian(302, "Dr. Samat", "cat", 4));
+
+        System.out.println(pets);
 
         boolean running = true;
         while (running) {
@@ -202,6 +204,8 @@ public class Main {
             System.out.println();
         }
     }
+
+
 
 
 }

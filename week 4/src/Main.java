@@ -150,14 +150,14 @@ public class Main {
             System.out.println((i + 1) + ". " + p); // Calls overridden toString()
             // Use instanceof to check type and show child-specific info
             if (p instanceof Dog) {
-                Dog d = (Dog) p; // Downcast
+                Dog d = (Dog) p;
                 if (d.needsTraining()) {
                     System.out.println(" ⚠️ Needs training!");
                 } else {
                     System.out.println(" 👍 Well-trained dog.");
                 }
             } else if (p instanceof Cat) {
-                Cat c = (Cat) p; // Downcast
+                Cat c = (Cat) p;
                 if (c.requiresOutdoorCheck()) {
                     System.out.println(" 🫵 Check outdoor activity.");
                 } else {
@@ -186,7 +186,7 @@ public class Main {
         int dogCount = 0;
         for (Pet p : pets) {
             if (p instanceof Dog) { // Filter by type
-                Dog d = (Dog) p; // Downcast to access Chef methods
+                Dog d = (Dog) p;
                 dogCount++;
                 System.out.println(dogCount + ". " + d.getName());
                 System.out.println("   Age: " + d.age + " y.o.");
@@ -207,12 +207,12 @@ public class Main {
         int catCount = 0;
         for (Pet p : pets) {
             if (p instanceof Cat) { // Filter by type
-                Cat c = (Cat) p; // Downcast to access Chef methods
+                Cat c = (Cat) p;
                 catCount++;
                 System.out.println(catCount + ". " + c.getName());
                 System.out.println("   Age: " + c.age + " y.o.");
                 System.out.println("   Indoor: " + (c.requiresOutdoorCheck() ? "No" : "Yes"));
-                c.scratch(); // unique method #2 demonstration            // Call unique Dog method
+                c.scratch(); // Call unique Cat method
                 System.out.println();
             }
         }
