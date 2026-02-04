@@ -59,33 +59,15 @@ public class VetClinicMenu implements Menu  {
 
                 switch (choice) {
 
-                    case 1:
-                        addDog();
-                        break;
-                    case 2:
-                        addCat();
-                        break;
-                    case 3:
-                        viewAllPets();
-                        break;
-                    case 4:
-                        viewAllDogs();
-                        break;
-                    case 5:
-                        viewAllCats();
-                        break;
-                    case 6:
-                        demonstratePolymorphism();
-                        break;
-                    case 7:
-                        addVet();
-                        break;
-                    case 8:
-                        viewAllVets();
-                        break;
-                    case 9:
-                        vetTreatsPets();
-                        break;
+                    case 1: addDog(); break;
+                    case 2: addCat(); break;
+                    case 3: viewAllPets(); break;
+                    case 4: viewAllDogs(); break;
+                    case 5: viewAllCats(); break;
+                    case 6: demonstratePolymorphism(); break;
+                    case 7: addVet(); break;
+                    case 8: viewAllVets(); break;
+                    case 9: vetTreatsPets(); break;
                     case 0:
                         running = false;
                         System.out.println("\nThank you for using Vet Clinic Management System!");
@@ -102,7 +84,6 @@ public class VetClinicMenu implements Menu  {
                 scanner.nextLine();
             }
         }
-
         scanner.close();
     }
 
