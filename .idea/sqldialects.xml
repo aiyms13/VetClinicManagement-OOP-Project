@@ -7,5 +7,7 @@
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_3.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_4.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/.idea/queries/Query_5.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/.idea/queries/Query_6.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/week 8/src/database_setup_week8.sql" dialect="PostgreSQL" />
   </component>
 </project>
