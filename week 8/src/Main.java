@@ -13,6 +13,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        Menu menu = new VetClinicMenu();
+        menu.run();
         PetDAO petDAO = new PetDAO();
         List<Pet> petList = petDAO.getAllPets();
         for(Pet pet : petList){

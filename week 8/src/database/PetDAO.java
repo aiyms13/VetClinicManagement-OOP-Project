@@ -10,7 +10,7 @@ public class PetDAO {
     // INSERT DOG
     public boolean insertDog(Dog dog) {
         String sql = "INSERT INTO pet (name, age, species, trained, indoor)" +
-                "VALUES (?, ?, ?, 'Dog', ?, NULL)";
+                "VALUES (?, ?, ?, 'Dog', ?, ?, NULL)";
 
         Connection connection = DatabaseConnection.getConnection();
         if (connection == null) return false;
@@ -43,7 +43,7 @@ public class PetDAO {
     // INSERT CAT
     public boolean insertCat(Cat cat) {
         String sql = "INSERT INTO pet (name, age, species, trained, indoor)" +
-                " VALUES (?, ?,?, 'Cat', NULL, ?)";
+                " VALUES (?, ?, ?, 'Cat', ?, NULL, ?)";
 
         Connection connection = DatabaseConnection.getConnection();
         if (connection == null) return false;
